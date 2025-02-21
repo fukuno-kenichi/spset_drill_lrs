@@ -7,7 +7,7 @@ OpenLRWはMongoDBにデータを蓄積しており，Apache Drill(スキーマ�
 ![概要図](/image/概要図_v6.png)
 
 # システム要件
-| | |
+| 分類 | 仕様 |
 | ---- | ---- |
 |OS|Ubuntu 22.04|
 |CPU|6 CPU|
