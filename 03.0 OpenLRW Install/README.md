@@ -13,7 +13,7 @@ git clone https://github.com/Apereo-Learning-Analytics-Initiative/OpenLRW
 chown -R boot /opt/openlrw
 su boot -c "bash OpenLRW/src/scripts/install.sh"
 ```
-  
+&nbsp;  
 ![install.sh実行例](image/install_sh.png)
 
 # ビルド
@@ -34,7 +34,8 @@ OpenLRWを実行し，MongoDBに初期DBを構築する．
 su boot -c "bash run.sh start"
 ```
 
-mongoshを実行し，生成されたテーブルからキーを取得する．    
+mongoshを実行し，生成されたテーブルからキーを取得する．  
+&nbsp;  
 ![apiKey取得例](image/api_key.png)
 
 
