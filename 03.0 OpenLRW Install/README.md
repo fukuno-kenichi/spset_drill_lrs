@@ -13,4 +13,4 @@ git clone https://github.com/Apereo-Learning-Analytics-Initiative/OpenLRW
 chown -R boot /opt/openlrw
 su boot -c "bash OpenLRW/src/scripts/install.sh"
 ```
-![install.sh実行例](image/installsh.png)
+![install.sh実行例](image/install_sh.png)
