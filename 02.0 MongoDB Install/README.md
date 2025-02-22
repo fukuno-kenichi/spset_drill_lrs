@@ -5,13 +5,17 @@ MongoDBは，NoSQLの高パフォーマンス／スケーラビリティを保�
 MongoDB Community Edition は以下のように，インストールする．   
 
 # 公開鍵をインポートする
+```
 sudo apt-get install gnupg curl
 curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \  
    sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \  
    --dearmor  
+```
 
 # リストファイルを作成する
-echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/8.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list  
+```
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/8.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+```
 
 # パッケージデータベースをリロードする
 sudo apt-get update  
