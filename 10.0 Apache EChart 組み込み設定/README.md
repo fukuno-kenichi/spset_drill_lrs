@@ -14,5 +14,5 @@ Supersetのチャート機能は，汎用的なインタフェースではある
 例えば以下の図では，必ずDEMENSIONS，ENTITYはグループ化キーとして扱われ，X AXIS，Y AXISは集計関数であることを前提としている．  
 そのため，グラフパターンをうまく活用できない問題が発生した．  
 
-![グラフ例](/image/BUBBLE CHART設定例.png)
+![グラフ例](image/BUBBLE CHART設定例.png)
 
