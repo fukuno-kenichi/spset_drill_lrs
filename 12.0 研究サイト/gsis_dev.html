@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="jp">
+<head>
+<title>LMS学習活動履歴の可視化　研究用プラットホーム</title>
+
+<script type="text/javascript">
+<!--
+function change_frame_height(frm){
+	var contentsHeight;
+	var docFrame = document.getElementById(frm);
+
+	docFrame.height = window.innerHeight;
+	docFrame.scrolling="auto"
+}
+//-->
+</script>
+</head>
+<body>
+
+<div style="font-size: 1.2em; margin-block-start: unset; margin-block-end: 5px; ">
+<p>
+<a href="https://gsis-fukuno.net/gsis_dev.html">LMS学習活動履歴の可視化　研究用プラットホーム</a>
+&nbsp;&nbsp;
+<a href="https://gsis-fukuno.net/mdl_itpass" target="_blank" >Moodleページはこちら</a>
+&nbsp;&nbsp;
+<a href="https://gsis-fukuno.net:8088/superset/dashboard/2/?standalone=0&expand_filters=0" target="_blank" >Supersetページはこちら</a>
+</p>
+</div> 
+
+<iframe id="iframeID"  onLoad="change_frame_height(this.id)" style="float:left;" width="49%" src="https://gsis-fukuno.net/mdl_itpass">
+</iframe>
+
+<iframe id="iframeID2" onLoad="change_frame_height(this.id)" style="float:left;" width="49%" src="https://gsis-fukuno.net:8088/superset/dashboard/2/?standalone=0&expand_filters=0">
+</iframe>
+
+</body>
+</html>
