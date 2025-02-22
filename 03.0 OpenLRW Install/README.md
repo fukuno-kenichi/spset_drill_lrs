@@ -14,3 +14,26 @@ chown -R boot /opt/openlrw
 su boot -c "bash OpenLRW/src/scripts/install.sh"
 ```
 ![install.sh実行例](image/install_sh.png)
+
+# ビルド
+以下のコマンドを実行し，ビルドする．  
+```
+su boot -c "bash build.sh"
+```
+
+# MongoDBのパス設定
+conf/settings.propertiesファイルに，mongodbのパスを設定する．
+```
+mongodb://localhost:27017/fuku_db
+```
+
+# OpenLRW実行
+OpenLRWを実行し，MongoDBに初期DBを構築する．  
+```
+su boot -c "bash run.sh start"
+```
+mongoshを実行し，生成されたテーブルからキーを取得する．  
+![apiKey取得例](image/api_key.png)
+
+
+
