@@ -12,6 +12,7 @@ sudo apt -y install php8.1-cli
 
 ## 参考URL
 [参考URL](https://qiita.com/t-kita/items/0663d07ca51cd0376859){:target="_blank"}
+[侍エンジニアブログ](https://www.sejuku.net/blog/){:target="_blank"}
 
 # 以下のコマンドを実行し，Moodleをインストールする．
 sudo chmod 600 moodleinst.php  
