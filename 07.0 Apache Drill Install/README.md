@@ -26,7 +26,9 @@ cd /home/ubuntu/Drill-1.21.2
 
 ## Web GUI表示
 以下のURLをWebブラウザで表示する．  
-※ポートを解放していない場合は，GUIから表示する．
+
+> [!IMPORTANT]
+> ※ポートを解放していない場合は，GUIから表示してください．
 
 ```
 http://localhost:8047
