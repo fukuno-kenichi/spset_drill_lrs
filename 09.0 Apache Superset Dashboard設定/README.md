@@ -34,6 +34,7 @@ Edit Recordアイコンより，Publicの権限を編集する．
 ダッシュボード一覧より，Actions列→Editを選択する．  
 
 ## 更新サイクルの設定
+![更新サイクルの設定](image/refresh.png)
 
 Dashboard properties画面のADVANCEDを選択し，拡張設定要素を表示する．  
 JSON METADATAの要素に，30秒の更新サイクルを設定する．  
