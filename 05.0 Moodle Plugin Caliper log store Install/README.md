@@ -3,3 +3,11 @@ Caliper log storeは，IMS Caliper 1.0仕様に準拠したMoodle用プラグイ
   
 Caliper log storeは以下のように，インストールする．  
 
+# インストール
+以下のURLから，インストール用圧縮ファイルをダウンロードし，インストールする．  
+```
+https://moodle.org/plugins/logstore_caliper
+```
+
+# プラグイン設定
+イベントストアURL，APIキー，即時送信を設定する．  
