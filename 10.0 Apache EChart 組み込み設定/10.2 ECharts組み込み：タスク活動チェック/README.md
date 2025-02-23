@@ -1,9 +1,9 @@
 # ECharts組み込み：タスク活動チェック
 
-##  SupersetのSQL実行結果取得と可視化
-SupersetのSQL実行結果を取得し，可視化する．  
+##  EChartsによる可視化
+SupersetのSQL実行結果CSVを取得し，可視化する．  
 
-![可視化](image/echart_task.png)
+![EChartsによる可視化](image/echart_task.png)
 
 ##  Superset SQL保存
 Supersetのメニュー「SQL」より「SQLLab」を選択し，SQLを登録する．  
