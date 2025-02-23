@@ -22,13 +22,3 @@ Supersetのチャート機能は，汎用的なインタフェースではある
 そこで，Supersetで表現できないグラフについて，SupersetのSQL実行結果を取得し，EChartsで可視化する方法を試行した．
 これにより，Supersetには用意されていないグラフパターンにも対応できることを確認した．
 
-
-## Public Roleに追加する権限
-
-|No.|Permissions|
-|----|-----|
-|1|can get results on SQLLab|
-|2|can format sql on SQLLab|
-|3|can export csv on SQLLab|
-|4|can execute sql query on SQLLab|
-|5|database access on [Drill].(id:1)|
