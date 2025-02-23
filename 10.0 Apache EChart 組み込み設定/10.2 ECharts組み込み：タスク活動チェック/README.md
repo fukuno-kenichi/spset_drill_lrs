@@ -56,3 +56,9 @@ ORDER BY
   FUKU_TASK_NAME
 ```
 
+##  Superset SqlLabのURL取得
+「DOWNLOAD TO CSV」ボタンのリンクURLをコピーする．  
+
+![タスク活用チェックURL](image/タスク活動チェック_sqllabo.png)
+
+
