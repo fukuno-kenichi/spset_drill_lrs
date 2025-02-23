@@ -35,8 +35,10 @@ http://localhost:8047
 ### Drill管理画面例
 ![Drill管理画面例](image/drill_admin.png)
 
-### StorageのMongoDBプラグイン変更
+## StorageのMongoDBプラグイン変更
 Storageメニューより，mongoをEnableに設定する．  
+
+### MongoDBを有効化
 ![MongoDBを有効化](image/drill_opt.png)
 
 ## Superset用のpackagesをインストールする．
