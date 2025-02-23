@@ -46,10 +46,10 @@ fuku_cource_id = fuku_cource_id.replace(/\n/g, '');
 fuku_cource_id = fuku_cource_id.replace(/^.*?\/course\/view.php\?id=/, '');
 fuku_cource_id = fuku_cource_id.replace(/\".*$/, ''); 
 
-
+//URLは，自分の環境に合わせて変更してください．
 
 d3.csv(
-  "https://gsis-fukuno.net:8088/api/v1/sqllab/export/yA25Ry8vTlU/", d3.autotype).then(function (SpstData) {
+  "https://gsis-fukuno.com:8088/api/v1/sqllab/export/****/", d3.autotype).then(function (SpstData) {
 
     SpstData = SpstData.filter(function(d){
 		if (fuku_cource_id === d.classId) {
