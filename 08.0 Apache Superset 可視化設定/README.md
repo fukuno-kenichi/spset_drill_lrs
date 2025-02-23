@@ -5,16 +5,18 @@ Supersetにコネクションを設定し，DrillからMongoDBのデータを読
 Supersetにログインし，Settingメニューから，Database Connectionsを選択する．  
 
 ### コネクション設定呼び出し
+![コネクション設定](image/conn_db.png)
 
 ### データベース選択
+![データベース選択](image/conn_sel_drill.png)
 
 ## 接続情報を入力し，接続を確認する
 接続情報  
 ```
 drill+sadrill://localhost:8047/dfs?use_ssl=False
 ```
-
 ### URI設定例
+![接続情報入力](image/conn_set_uri.png)
 
 ## チャート用データセット
 以下のSQLを，DS_MAINという名称で，DATASETに登録する．  
