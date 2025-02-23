@@ -21,7 +21,7 @@ fuku_db> db.mongoOrg.find().pretty()
 [
   {
     _id: ObjectId('676e6f8a858df378ab983ee6'),
-    **apiKey: 'b2ad7e2b-94a6-4b7b-bc10-253f7d1d0d85',**
+    apiKey: 'b2ad7e2b-94a6-4b7b-bc10-253f7d1d0d85',  //このKeyをプラグインに設定する
     apiSecret: '11ef15d3-2476-4dfb-a8a0-6a27282d3e34',
     tenantId: '676e6f8a858df378ab983ee5',
     org: {
