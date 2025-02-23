@@ -83,7 +83,7 @@ superset db upgrade
 superset init
 ```
 
-環境変数にPUBLIC_ROLE_LIKE_GAMMA = True，PUBLIC_ROLE_LIKE = "Gamma"を設定した後，初期化を実行されると，Gammaロール権限が，Public権限にコピーされる．  
+環境変数にPUBLIC_ROLE_LIKE_GAMMA = True，PUBLIC_ROLE_LIKE = "Gamma"を設定した後，初期化を実行すると，Gammaロール権限が，Public権限にコピーされる．  
 
 # Supersetを起動する
 このコマンドは，Supersetのみ，個別起動の場合である．
