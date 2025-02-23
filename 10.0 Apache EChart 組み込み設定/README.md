@@ -1,10 +1,10 @@
+# Apache ECharts
 Apache EChartsは，Baiduによって開発された，データの視覚化ライブラリである．  
+https://echarts.apache.org/examples/en/index.html  
+
 Supersetのグラフ機能では実現できない可視化を補うために使用した．  
 本研究では，オープンソースの，Apache ECharts 5.5.1を採用した．  
 
-# Apache ECharts
-https://echarts.apache.org/examples/en/index.html
-  
 EChartsはシステムへのインストールは必要ない．
 Moodleにファイルをアップロードして動作させる．  
 
