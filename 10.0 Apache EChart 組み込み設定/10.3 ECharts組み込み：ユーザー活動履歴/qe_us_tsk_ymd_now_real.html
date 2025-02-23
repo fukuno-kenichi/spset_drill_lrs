@@ -1,0 +1,193 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bubble-gradient
+-->
+<!DOCTYPE html>
+<html lang="en" style="width: 100%; height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="width: 100%; height: 600px">
+  <div id="container" style="height: 100%; height: 100%"></div>
+
+	<script type="text/javascript" src="echarts.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="d3.v7.min.js"></script>
+  
+  <script type="text/javascript">
+
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+window.addEventListener('resize', myChart.resize);
+
+var human = [];
+var var_series = [];
+
+var Human_old = "";
+var wp = -1;
+
+/*
+var homelink = parent.document.getElementsByClassName("homelink");
+
+var fuku_cource_id = homelink[0].innerHTML;
+fuku_cource_id = fuku_cource_id.replace(/^.*=/, '');
+fuku_cource_id = fuku_cource_id.replace(/\".*$/, ''); 
+*/
+
+var tag_pan = parent.document.getElementsByClassName("breadcrumb");
+
+var fuku_cource_id = tag_pan[0].innerHTML;
+fuku_cource_id = fuku_cource_id.replace(/\n/g, '');
+fuku_cource_id = fuku_cource_id.replace(/^.*?\/course\/view.php\?id=/, '');
+fuku_cource_id = fuku_cource_id.replace(/\".*$/, ''); 
+
+
+
+d3.csv(
+  "https://gsis-fukuno.net:8088/api/v1/sqllab/export/yA25Ry8vTlU/", d3.autotype).then(function (SpstData) {
+
+    SpstData = SpstData.filter(function(d){
+		if (fuku_cource_id === d.classId) {
+	        return true;
+        }
+		else{
+            return false;
+	    }
+    });
+
+
+	human = Array.from(new Set(SpstData.map(function(d) { 
+		return d.FUKU_ID_USER_NAME; 
+	}))	);
+
+
+	SpstData.forEach(function (dataItem, idx) {
+
+		if (dataItem.FUKU_ID_USER_NAME != Human_old){
+			wp = wp + 1;
+			var_series.push([]);
+		}
+
+		Human_old = dataItem.FUKU_ID_USER_NAME;
+
+		var_series[wp].nm = dataItem.FUKU_ID_USER_NAME;
+		var_series[wp].push([dataItem.FUKU_EVTM_MIN, dataItem.FUKU_ID_USER_NAME, dataItem.CNT, dataItem.FUKU_TASK_QNO]);
+	});
+
+
+	option = {
+/*	  backgroundColor: new echarts.graphic.RadialGradient(0.3, 0.3, 0.8, [
+	    {
+	      offset: 0,
+	      color: '#f7f8fa'
+	    },
+	    {
+	      offset: 1,
+	      color: '#cdd0d5'
+	    }
+	  ]),
+*/
+/*
+	  title: {
+	    text: 'LMS Cource Access. ',
+	    left: '5%',
+	    top: '3%'
+	  },
+*/
+	  legend: {
+	    right: '10%',
+	    top: '3%',
+		data: human,
+		textStyle: {
+			fontSize: 12,
+		}
+	  },
+	  grid: {
+		top: 20,
+	    height: '90%',
+	    right: 40,
+	    left: 120,
+	  },
+	  xAxis: {
+		type: 'time',
+//		splitNumber: ,
+	    splitLine: {
+		  show:true,
+	      lineStyle: {
+	        type: 'solid',
+	      }
+	    },
+		axisLabel: {
+			fontSize: 12
+		}
+	  },
+	  yAxis: {
+		type: 'category',
+	    splitLine: {
+		  show:true,
+	      lineStyle: {
+	        type: 'dashed'
+	      }
+	    },
+	    scale: false,
+		axisLabel: {
+			fontSize: 12
+		}
+	  },
+	  series: []
+	};
+
+
+	for (var n = 0; n < var_series.length; n++) {
+		
+		option.series.push({
+			name : var_series[n].nm,
+			data : var_series[n],
+		      type: 'scatter',
+		      symbolSize: function (data) {
+		        return data[2] * 20;
+		      },
+		      emphasis: {
+		        focus: 'series',
+		        label: {
+		          show: true,
+		          formatter: '{@[3]}={@[2]}回\n{@[0]}',
+		          position: 'insideRight',
+				  fontSize: 12
+		        }
+		      },
+			itemStyle: {
+			  shadowBlur: 10,
+			  shadowColor: 'rgba(120, 36, 50, 0.5)',
+			  shadowOffsetY: 5,
+//			  color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [
+//			    {
+//			      offset: 0,
+//			      color: 'rgb(251, 118, 123)'
+//			    },
+//			    {
+//			      offset: 1,
+//			      color: 'rgb(204, 46, 72)'
+//			    }
+//			  ])
+			}
+		    });
+    }
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+//    window.addEventListener('resize', myChart.resize);
+
+}
+);
+
+  </script>
+</body>
+</html>
