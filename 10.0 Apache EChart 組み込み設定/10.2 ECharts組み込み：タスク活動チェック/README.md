@@ -1,6 +1,6 @@
 # ECharts組み込み：タスク活動チェック
 ##  Superset SQL保存
-Supersetのメニュー「SQL」より「SQLLab」を選択し，SQLを登録する．
+Supersetのメニュー「SQL」より「SQLLab」を選択し，SQLを登録する．  
 リポジトリのSQLファイルを，参照ください．
 
 ```
