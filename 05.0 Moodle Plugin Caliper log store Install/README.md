@@ -11,3 +11,6 @@ https://moodle.org/plugins/logstore_caliper
 
 # プラグイン設定
 イベントストアURL，APIキー，即時送信を設定する．  
+
+## Caliper log storeプラグイン設定例
+![Caliper log storeプラグイン設定例](image/plugin_set.png)
