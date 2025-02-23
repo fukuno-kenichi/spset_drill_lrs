@@ -41,12 +41,13 @@ Edit Recordアイコンより，Publicの権限を編集する．
 |9|database access on [Drill].(id:1)|
 |10|can cache dashboard screenshot on Dashboard|
 
+## 更新サイクルの設定
+
 上部メニューDashboardsより，ダッシュボード一覧を表示する．  
 ダッシュボード一覧より，Actions列→Editを選択する．  
 
 ![ダッシュボード編集](image/dashboard_edit.png)
 
-## 更新サイクルの設定
 ![更新サイクルの設定](image/refresh.png)
 
 Dashboard properties画面のADVANCEDを選択し，拡張設定要素を表示する．  
