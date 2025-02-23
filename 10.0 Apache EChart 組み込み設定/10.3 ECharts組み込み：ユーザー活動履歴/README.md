@@ -3,7 +3,7 @@
 ##  EChartsによる可視化
 SupersetのSQL実行結果CSVを取得し，可視化する．  
 
-![EChartsによる可視化](image/echart_task.png)
+![EChartsによる可視化](image/echart_buble.png)
 
 以下に，実装方法を示す．  
 
