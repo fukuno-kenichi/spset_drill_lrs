@@ -5,6 +5,8 @@ SupersetのSQL実行結果CSVを取得し，可視化する．
 
 ![EChartsによる可視化](image/echart_task.png)
 
+以下に，実装方法を示す．  
+
 ##  Superset SQL保存
 Supersetのメニュー「SQL」より「SQLLab」を選択し，SQLを登録する．  
 リポジトリのSQLファイルを，参照ください．
