@@ -30,3 +30,8 @@ cd /home/ubuntu/Drill-1.21.2
 ```
 http://localhost:8047
 ```
+
+### Drill管理画面例
+![Drill管理画面例](image/drill_admin.png)
+
+
