@@ -40,3 +40,6 @@ fuku_db> db.mongoOrg.find().pretty()
 # プラグイン有効化
 サイト管理→　ロギングを選択し，プラグインを有効化する．  
 
+## プラグインの有効化
+![プラグインの有効化](image/plugin_act.png)
+
