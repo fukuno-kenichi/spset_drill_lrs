@@ -10,3 +10,6 @@ Moodle（左側）と，Superset（右側）を，同時に表示させるため
 
 オリジン間リソース共有 (CORS)とは  
 https://qiita.com/Hirohana/items/9b5501c561954ad32be7
+
+# 単体起動も可能
+上部のURLを開くことで，単体でMoodle，Supersetのブラウザ起動も可能です．
