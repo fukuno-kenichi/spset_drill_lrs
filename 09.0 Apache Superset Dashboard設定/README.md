@@ -21,7 +21,7 @@ SupersetのSettingメニューより，List Roleを選択する．
 ログイン無しで，ダッシュボードを閲覧できように，Public権限を設定する．  
 Edit Recordアイコンより，Publicの権限を編集する．  
 
-![ロール編集(image/role_edit.png)
+![ロール編集](image/role_edit.png)
 
 コネクションへのアクセス権限“database access on [Drill].(id:1)”　及び，Dashboardに関連する権限を，必要に応じて設定する．
 
