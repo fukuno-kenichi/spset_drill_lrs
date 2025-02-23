@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html style="width: 100%; height: 100%">
+  <head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+  </head>
+<body style="width: 100%; height: 600px">
+  <div id="container" style="width: 100%; height: 100%"></div>
+
+    <script type="text/javascript" src="echarts.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="d3.v7.min.js"></script>
+
+    <script type="text/javascript">
+
+/*An examble of Bar Chart usgin D3 and Apache Echart. Input data as CSV extract from: United Nations, Department of Economic and Social Affairs, Population Division (2018). World Urbanization Prospects: The 2018 Revision, Online Edition. Copyright © 2018 by United Nations, made available under a Creative Commons license CC BY 3.0 IGO: http://creativecommons.org/licenses/by/3.0/igo/ selection of the top 20 cities*/
+
+//SpstData is returned as an array containing the CSV data.
+
+const TTL_ARRAY = ['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10'];
+
+var human = [];
+var var_series = [];
+
+d3.csv(
+  "https://gsis-fukuno.net:8088/api/v1/sqllab/export/9hEdQhoaMMw/", d3.autotype).then(function (SpstData) {
+
+    //initialise Echarts in the Div id=main
+/*
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+*/
+
+/*
+var homelink = parent.document.getElementsByClassName("homelink");
+
+var fuku_cource_id = homelink[0].innerHTML;
+fuku_cource_id = fuku_cource_id.replace(/^.*=/, '');
+fuku_cource_id = fuku_cource_id.replace(/\".*$/, ''); 
+*/
+
+var tag_pan = parent.document.getElementsByClassName("breadcrumb");
+
+var fuku_cource_id = tag_pan[0].innerHTML;
+fuku_cource_id = fuku_cource_id.replace(/\n/g, '');
+fuku_cource_id = fuku_cource_id.replace(/^.*?\/course\/view.php\?id=/, '');
+fuku_cource_id = fuku_cource_id.replace(/\".*$/, ''); 
+
+console.log(fuku_cource_id);
+
+    SpstData = SpstData.filter(function(d){
+		if (fuku_cource_id === d.classId) {
+	        return true;
+        }
+		else{
+            return false;
+	    }
+    });
+    
+
+	human = Array.from(new Set(SpstData.map(function(d) { return d.FUKU_ID_USER_NAME; })));
+
+    var myChart = echarts.init(document.getElementById("container"));
+
+window.addEventListener('resize', myChart.resize);
+
+//var d = parent.document.getElementsByTagName("*");
+//<a href="https://gsis-fukuno.net/mdl_itpass/course/view.php?id=4">Iパス短期講座</a>
+
+
+    // All the settings of the chart are provided in this variable
+    var 
+option = {
+  tooltip: {
+    position: 'bottom'
+  },
+legend: {
+	show: false
+},	
+  grid: {
+	top: 20,
+    height: '90%',
+    right: 20,
+    left: 120,
+  },
+  xAxis: {
+    type: 'category',
+//	data: Array.from(new Set(SpstData.map(function(d) { return d.FUKU_TASK_NAME; }))).sort(),
+	data: TTL_ARRAY,
+    splitArea: {
+      show: true
+    },
+	axisLabel: {
+		fontSize: 12
+	}
+  },
+  yAxis: {
+    type: 'category',
+	data: Array.from(new Set(SpstData.map(function(d) { 
+		return d.FUKU_ID_USER_NAME; 
+	}))).reverse(),
+    splitArea: {
+      show: true
+    },
+	axisLabel: {
+		fontSize: 12
+	}
+  },
+  visualMap: {
+	show: false,
+    min: 0,
+    max: 10,
+    calculable: true,
+    orient: 'horizontal',
+    left: 'center',
+    bottom: '15%'
+  },
+  series: [
+    {
+      name: 'イベント数',
+      type: 'heatmap',
+      data: SpstData.map(function (item) {
+	    return [item.FUKU_TASK_QNO, item.FUKU_ID_USER_NAME, item.CNT];
+	  }),
+      label: {
+        show: true,
+		fontSize: 12
+      },
+
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+    // All the above is applied to the chart
+    myChart.setOption(option);
+
+window.addEventListener('resize', myChart.resize);
+
+  }
+);
+
+
+    </script>
+	</body>
+</html>
