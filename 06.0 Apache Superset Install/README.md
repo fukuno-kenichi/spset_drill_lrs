@@ -76,7 +76,7 @@ python3 -m venv venv
 export FLASK_APP=superset
 export SUPERSET_CONFIG_PATH=/home/ubuntu/superset_config.py
 
-superset run -h gsis-fukuno.com -p 8088 --cert "/etc/ssl/ssl_fuku/server.crt" --key "/etc/ssl/ssl_fuku/server.key"
+superset run -h gsis-fukuno.com -p 8088 --cert "/etc/ssl/****/server.crt" --key "/etc/ssl/****/server.key"
 ```
 
 
