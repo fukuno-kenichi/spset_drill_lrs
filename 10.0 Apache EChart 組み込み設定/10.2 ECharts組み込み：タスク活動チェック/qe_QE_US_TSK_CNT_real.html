@@ -21,8 +21,9 @@ const TTL_ARRAY = ['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10'];
 var human = [];
 var var_series = [];
 
+// URLは，自分の環境に合わせて，変更してください．
 d3.csv(
-  "https://gsis-fukuno.net:8088/api/v1/sqllab/export/9hEdQhoaMMw/", d3.autotype).then(function (SpstData) {
+  "https://gsis-fukuno.net:com/api/v1/sqllab/export/****/", d3.autotype).then(function (SpstData) {
 
     //initialise Echarts in the Div id=main
 /*
