@@ -86,7 +86,8 @@ superset init
 環境変数にPUBLIC_ROLE_LIKE_GAMMA = True，PUBLIC_ROLE_LIKE = "Gamma"を設定した後，初期化を実行すると，Gammaロール権限が，Public権限にコピーされる．  
 
 # Supersetを起動する
-このコマンドは，Supersetのみ，個別起動の場合である．
+このコマンドは，Supersetのみ，個別起動の場合である．  
+&nbsp;  
 （OpenLRW，Superset，Drillの一括起動は，[11.0 起動ファイル](https://github.com/fukuno-kenichi/spset_drill_lrs/tree/main/11.0%20%E8%B5%B7%E5%8B%95%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB)を参照ください．）
 
 ```
