@@ -87,4 +87,10 @@ Moodleを編集モードに変更し，活動またはリソースを追加す�
 |2|ECharts.min.js|オープンソースのJavaScriptデータ視覚化ライブラリ|
 |3|jquery-3.7.1.js|JavaScriptコードをより容易に記述できるようにするために設計されたJavaScriptライブラリ|
 |4|qe_QE_US_TSK_CNT_real.html|本研究用に作成した，JavaScriptを含むhtmlファイル|
-
+  
+## ダウンロードURL
+jquery  
+https://jquery.com/download/
+  
+d3  
+https://d3js.org/d3.v7.min.js
