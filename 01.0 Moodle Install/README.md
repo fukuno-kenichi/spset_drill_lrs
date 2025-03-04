@@ -16,7 +16,7 @@ sudo apt -y install php8.1-cli
 https://qiita.com/t-kita/items/0663d07ca51cd0376859
 
 ## Moodleブランチ名の指定
-「$ver = "403"; // Moodle 4.3.*」，「MOODLE_403_STABLE」のように，Moodleブランチ名の指定はこちらを参照ください  
+「$ver = "403"; // Moodle 4.3.*」，「MOODLE_403_STABLE」のように，Moodleブランチ名の指定ルールはこちらを参照ください  
 https://docs.moodle.org/4x/ja/%E7%AE%A1%E7%90%86%E8%80%85%E7%94%A8Git
 
 # 以下のコマンドを実行し，Moodleをインストールする．
