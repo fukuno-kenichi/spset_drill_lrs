@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0285ec0c-3764-4adc-b24a-78cba39e2dec)OpenLRWがデータを蓄積しているMongoDB（データベース）を，直接参照するために使用した．  
+OpenLRWがデータを蓄積しているMongoDB（データベース）を，直接参照するために使用した．  
 Apache Drillは，様々なデータベースに対応した，SQLクエリエンジンである．  
 本研究では，オープンソースの，Apache Drill 1.21.2を採用した．  
 
@@ -12,8 +12,8 @@ Apache Drillの場合，外部データラッパも，データベースも，�
 MongoDBのデータからスキーマを解析するため，初回アクセス時のみ，時間がかかる．（５秒程度）  
 それ以降は，高速アクセスが可能である．  
   
-別の国際規格であるxAPIとLRS(MongoDB)の場合であっても，Apache Drillを使用すれば，同じ方式でアクセス可能である．
-上記を踏まえ，スキーマフリーSQLクエリエンジンである，Apache Drillを採用した．
+別の国際規格であるxAPIとLRS(MongoDB)への対応を検討する場合も，Apache Drillを使用すれば，同じ方式でアクセス可能である．
+上記を踏まえ，Apache Drillを採用した．
   
 Drillは以下のように，インストールする．   
 
