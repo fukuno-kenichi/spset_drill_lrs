@@ -4,7 +4,7 @@ Apache Drillは，様々なデータベースに対応した，SQLクエリエ�
 
 # なぜ，Apache Drillを採用するのか
 
-LAaaS-docker（RCOS）では，外部データラッパ（multicorn)と，データベース（PostgreSQL）を用いて，MongoDBのデータにアクセスしている．
+LAaaS-docker（RCOS）では，外部データラッパ（multicorn)と，データベース（PostgreSQL）を用いて，MongoDBのデータにアクセスしている．  
 https://github.com/RCOSDP/LAaaS-docker/blob/master/superset-db/
 
 外部テーブルのスキーマを明確に定義して，データアクセスを実現している．  
