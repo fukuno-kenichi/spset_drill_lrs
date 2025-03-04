@@ -2,6 +2,7 @@ LRSは，学習活動のデータを保存，管理，共有するためのシ�
 OpenLRWは，Java ベースで開発された学習記録のためのシステムである．  
 
 本研究では，オープンソースの，OpenLRW 1.2.3を採用した．  
+https://github.com/Apereo-Learning-Analytics-Initiative/OpenLRW
 
 # インストール
 以下のコマンドを実行し，インストールする．  
