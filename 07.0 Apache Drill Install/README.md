@@ -8,6 +8,7 @@ LAaaS-docker（RCOS）では，外部データラッパ（multicorn)と，デー
 https://github.com/RCOSDP/LAaaS-docker/blob/master/superset-db/
 
 外部テーブルのスキーマを明確に定義して，データアクセスを実現している．  
+  
 Apache Drillの場合，外部データラッパも，データベースも，外部テーブル定義も不要で，直接アクセスが可能である．  
 MongoDBのデータからスキーマを解析するため，初回アクセス時のみ，時間がかかる．（５秒程度）  
 それ以降は，高速アクセスが可能である．  
