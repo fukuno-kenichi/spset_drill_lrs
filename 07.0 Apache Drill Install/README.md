@@ -2,6 +2,8 @@ OpenLRWがデータを蓄積しているMongoDB（データベース）を，直
 Apache Drillは，様々なデータベースに対応した，SQLクエリエンジンである．  
 本研究では，オープンソースの，Apache Drill 1.21.2を採用した．  
 
+https://drill.apache.org/
+  
 # なぜ，Apache Drillを採用するのか
 
 LAaaS-docker（RCOS）では，外部データラッパ（multicorn)と，データベース（PostgreSQL）を用いて，MongoDBのデータにアクセスしている．  
