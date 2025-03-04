@@ -19,6 +19,6 @@ Supersetのチャート機能は，汎用的なインタフェースではある
 
 ![グラフ例](image/BUBBLE_CHART設定例.png)
 
-そこで，Supersetで表現できないグラフについて，SupersetのSQL実行結果CSVを取得し，JavaScriptでプログラミングし，EChartsで可視化する方法を試行した．  
+そこで，Supersetで表現できないグラフについて，JavaScriptでプログラミングして，SupersetのSQL実行結果CSVを取得し，EChartsで可視化する方法を試行した．  
 これにより，Supersetには用意されていないグラフパターンにも対応できることを確認した．
 
