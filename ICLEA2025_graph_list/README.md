@@ -8,36 +8,39 @@ We created a research website and set up an environment where Moodle and the Sup
 ![research website](image/res_web_site.png)
 Fig. Screenshot of the system's dashboard embedded with Moodle learning content
 
-# Graph No.1 : Frequency by access time
+# List of Visualization Graphs Used in This Study  
+Please refer to the graph numbers corresponding to Questionnaire 3.
+
+## Graph No.1 : Frequency by access time
 ![graph no.1](image/gra_01_en.png)
 
-# Graph No.2 : Engagement status
+## Graph No.2 : Engagement status
 ![graph no.2](image/gra_02_en.png)
 
-# Graph No.3 : Graph chart
+## Graph No.3 : Graph chart
 ![graph no.3](image/gra_03_en.png)
 
-# Graph No.4 : Graph chart V2
+## Graph No.4 : Graph chart V2
 ![graph no.4](image/gra_04_en.png)
 
-# Graph No.5 : User activity frequency
+## Graph No.5 : User activity frequency
 ![graph no.5](image/gra_05_en.png)
 
-# Graph No.6 : Number of accesses (users / day)
+## Graph No.6 : Number of accesses (users / day)
 ![graph no.6](image/gra_06_en.png)
 
-# Graph No.7 : Activity of all learners
+## Graph No.7 : Activity of all learners
 ![graph no.7](image/gra_07_en.png)
 
-# Graph No.8 : Cumulative user events
+## Graph No.8 : Cumulative user events
 ![graph no.8](image/gra_08_en.png)
 
-# Graph No.9 : LMS events
+## Graph No.9 : LMS events
 ![graph no.9](image/gra_09_en.png)
 
-# Graph No.10 : Task activity check (Moodle)
+## Graph No.10 : Task activity check (Moodle)
 ![graph no.10](image/gra_10_en.png)
 
-# Graph No.11 : User activity history (Moodle)
+## Graph No.11 : User activity history (Moodle)
 ![graph no.11](image/gra_11_en.png)
 
