@@ -2,10 +2,11 @@ Supplementary website in the ICLEA 2025 Paper
 
 ![graph no.1](image/fig_1.png)
 
+# research website
 We created a research website and set up an environment where Moodle and the Superset dashboard can be displayed simultaneously using the <iframe> tag. The left side of Figure 1 is the Moodle screen, and the right side is the dashboard screen visualized by Apache Superset.  
 
 ![research website](image/res_web_site.png)
-Figure 1  Screenshot of the system's dashboard embedded with Moodle learning content
+Fig. Screenshot of the system's dashboard embedded with Moodle learning content
 
 # Graph No.1 : Frequency by access time
 ![graph no.1](image/gra_01_en.png)
