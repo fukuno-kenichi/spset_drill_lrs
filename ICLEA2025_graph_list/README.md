@@ -39,7 +39,9 @@ Please refer to the graph numbers corresponding to Questionnaire 3.
 ![graph no.11](image/gra_11_en.png)
 
 # Supplementary Information on the Research Website
-We created a research website and set up an environment where Moodle and the Superset dashboard can be displayed simultaneously using the <iframe> tag. The left side of Figure below is the Moodle screen, and the right side is the dashboard screen visualized by Apache Superset.  
+A dedicated research website was developed for this study to support the simultaneous use of the LMS (Moodle) and the BI visualization dashboard (Apache Superset). The website was structured to display both interfaces side by side using the <iframe> tag. As shown in the figure below, the left pane displays the Moodle course content, while the right pane presents visualizations of learners’ activity data.
+
+This configuration enabled learners to monitor their own learning progress in real time while comparing it with peer activity trends visualized on the dashboard. The seamless integration of course materials and visual analytics on a single screen aimed to enhance learner engagement and promote a sense of social presence during asynchronous learning.
 
 ![research website](image/res_web_site.png)
 Fig. Screenshot of the system's dashboard embedded with Moodle learning content
