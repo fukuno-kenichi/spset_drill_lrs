@@ -1,6 +1,7 @@
 Figures of Visualization Graphs in the ICLEA 2025 Paper
 
 We created a research website and set up an environment where Moodle and the Superset dashboard can be displayed simultaneously using the <iframe> tag. The left side of Figure 2 is the Moodle screen, and the right side is the dashboard screen visualized by Apache Superset.
+
 ![research website](image/res_web_site.png)
 
 # Graph No.1 : Frequency by access time
