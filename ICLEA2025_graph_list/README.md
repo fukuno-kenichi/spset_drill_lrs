@@ -32,9 +32,9 @@ Figure 1  Screenshot of the system's dashboard embedded with Moodle learning con
 # Graph No.9 : LMS events
 ![graph no.9](image/gra_09_en.png)
 
-# Graph No.10 : Task activity check (ECharts)
+# Graph No.10 : Task activity check (Moodle)
 ![graph no.10](image/gra_10_en.png)
 
-# Graph No.11 : User activity history (ECharts)
+# Graph No.11 : User activity history (Moodle)
 ![graph no.11](image/gra_11_en.png)
 
