@@ -2,12 +2,6 @@
 
 ![graph no.1](image/fig_1.png)
 
-# research website
-We created a research website and set up an environment where Moodle and the Superset dashboard can be displayed simultaneously using the <iframe> tag. The left side of Figure below is the Moodle screen, and the right side is the dashboard screen visualized by Apache Superset.  
-
-![research website](image/res_web_site.png)
-Fig. Screenshot of the system's dashboard embedded with Moodle learning content
-
 # List of Visualization Graphs Used in This Study  
 Please refer to the graph numbers corresponding to Questionnaire 3.
 
@@ -44,3 +38,8 @@ Please refer to the graph numbers corresponding to Questionnaire 3.
 ## Graph No.11 : User activity history (Moodle)
 ![graph no.11](image/gra_11_en.png)
 
+# Supplementary Information on the Research Website
+We created a research website and set up an environment where Moodle and the Superset dashboard can be displayed simultaneously using the <iframe> tag. The left side of Figure below is the Moodle screen, and the right side is the dashboard screen visualized by Apache Superset.  
+
+![research website](image/res_web_site.png)
+Fig. Screenshot of the system's dashboard embedded with Moodle learning content
